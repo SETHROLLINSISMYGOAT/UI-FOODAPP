@@ -50,4 +50,51 @@ Android SDK (API Level 21 or higher recommended).
 
 Clone the Repository:
 
-git clone https:
+git clone https:https://github.com/SETHROLLINSISMYGOAT/UI-FOODAPP.git
+
+Open in Android Studio:
+
+Launch Android Studio.
+
+Select File > Open... and navigate to the cloned project directory.
+
+Sync Gradle:
+
+Android Studio will automatically try to sync the Gradle project. If it doesn't, click File > Sync Project with Gradle Files.
+
+Add Images:
+
+This project uses placeholder images referenced as drawables. You will need to place your own image files named burger_main.jpg (or .png) and burger_item.jpg (or .png) into the app/src/main/res/drawable/ folder.
+
+Run the Application:
+
+Select an emulator or connect a physical Android device.
+
+Click the Run button (green play icon) in the toolbar.
+
+Project Structure & Resources
+res/layout/activity_main.xml: Defines the main restaurant view.
+
+res/layout/item_recommended.xml: Defines the reusable layout for individual recommended food items.
+
+res/layout/activity_item_details.xml: Defines the layout for the item details screen.
+
+res/values/colors.xml: Contains all custom color definitions used throughout the UI.
+
+res/values/strings.xml: Contains all text strings used in the UI, enabling easy localization.
+
+res/drawable/: Contains custom shape XML drawables (e.g., rounded_card_background.xml, chip_selected_background.xml) and vector assets for icons (e.g., ic_star.xml, ic_home.xml). All required drawable XMLs and vector asset definitions are provided in the project.
+
+Future Enhancements
+Implement click listeners for all interactive elements.
+
+Integrate with a backend for dynamic data loading.
+
+Add animations and transitions for a more fluid experience.
+
+Implement quantity selection for items.
+
+Add a search functionality.
+
+License
+This project is open-sourced under the MIT License. See the LICENSE file for more details.
