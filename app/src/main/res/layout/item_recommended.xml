@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_card_background"
+    android:elevation="2dp"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/burger_item"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/cheese_burger"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/item_image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/item_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/a_cheeseburger_is_a_hamburger_with_one_or_more_slices_of_melted_cheese_on_top"
+        android:textColor="@color/grey_text"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@id/add_to_cart_button"
+        app:layout_constraintStart_toEndOf="@id/item_image"
+        app:layout_constraintTop_toBottomOf="@id/item_title" />
+
+    <ImageView
+        android:id="@+id/item_star_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/ic_star"
+        app:layout_constraintStart_toEndOf="@id/item_image"
+        app:layout_constraintTop_toBottomOf="@id/item_description"
+        app:tint="@color/rating_yellow"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/item_rating_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/_4_9"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/item_star_icon"
+        app:layout_constraintStart_toEndOf="@id/item_star_icon"
+        app:layout_constraintTop_toTopOf="@id/item_star_icon" />
+
+    <ImageView
+        android:id="@+id/item_time_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/ic_time"
+        app:layout_constraintBottom_toBottomOf="@id/item_rating_text"
+        app:layout_constraintStart_toEndOf="@id/item_rating_text"
+        app:layout_constraintTop_toTopOf="@id/item_rating_text"
+        app:tint="@color/grey_text"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/item_time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/_20_min"
+        android:textColor="@color/grey_text"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/item_time_icon"
+        app:layout_constraintStart_toEndOf="@id/item_time_icon"
+        app:layout_constraintTop_toTopOf="@id/item_time_icon" />
+
+    <TextView
+        android:id="@+id/add_to_cart_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/add_to_cart_background"
+        android:drawablePadding="4dp"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="8dp"
+        android:text="@string/add_to_cart"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        app:drawableStartCompat="@drawable/ic_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
