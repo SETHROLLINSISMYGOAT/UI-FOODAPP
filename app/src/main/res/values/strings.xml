@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">UI Food App</string>
+
     <string name="_4_7">4.7</string>
     <string name="free">Free</string>
     <string name="_20_min">20 min</string>
