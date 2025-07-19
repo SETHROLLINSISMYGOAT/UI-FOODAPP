@@ -97,4 +97,4 @@ Implement quantity selection for items.
 Add a search functionality.
 
 License
-This project is open-sourced under the MIT License. See the LICENSE file for more details.
+This project is open-sourced under the MIT License. See the LICENSE file for more details. 
